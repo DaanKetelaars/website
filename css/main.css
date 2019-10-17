@@ -1,3 +1,13 @@
+/* FONTS */
+@font-face {
+  font-family: 'DrukTextWide-Heavy';
+  src: url('../assets/fonts/DrukTextWide-Heavy.eot');
+  src: url('../assets/fonts/DrukTextWide-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/DrukTextWide-Heavy.woff') format('woff'),
+    url('../assets/fonts/DrukTextWide-Heavy.ttf') format('truetype');
+}
+
+
 /* BASICS/RESET */
 html {
   scroll-behavior: smooth;
@@ -95,7 +105,7 @@ a.link:hover {
 a.logo {
   border-bottom: none;
   color: #0EFFB8;
-  font-family: 'Druk text wide', sans-serif;
+  font-family: 'DrukTextWide-Heavy';
   letter-spacing: 3px;
   font-size: 1.5em;
   display: flex;
@@ -131,8 +141,9 @@ section.hero {
   text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font: 800 4.25em 'Druk text wide', sans-serif;
+  font: 900 4.25em 'DrukTextWide-Heavy';
   width: 100%;
+  line-height: 1em;
 }
 
 .hero header a {
@@ -159,7 +170,7 @@ section.overons {
 
 .overons header h1 {
   text-align: center;
-  font: 800 3.5em 'Druk text wide', sans-serif;
+  font: 800 3.5em 'DrukTextWide-Heavy';
   color: #4C27FF;
   margin-top: 1em;
 }
@@ -174,6 +185,7 @@ section.overons {
   font-weight: 900;
   color: #000000;
   line-height: 35px;
+  word-spacing: -0.1em;
 }
 
 .overons header img {
@@ -216,7 +228,7 @@ section.member {
 
 .member header h1 {
   text-align: center;
-  font: 800 4.25em 'Druk text wide', sans-serif;
+  font: 800 4.25em 'DrukTextWide-Heavy';
   width: 100%;
   color:#fff;
 }
@@ -247,7 +259,7 @@ section.over-member {
 
 .over-member header h1 {
   text-align: center;
-  font: 800 3.5em 'Druk text wide', sans-serif;
+  font: 800 3.5em 'DrukTextWide-Heavy';
   color: #4C27FF;
   margin-top: 1em;
 }
@@ -262,6 +274,7 @@ section.over-member {
   font-weight: 900;
   color: #000000;
   line-height: 35px;
+  word-spacing: -0.1em;
 }
 
 .over-member header img {
@@ -308,7 +321,7 @@ footer p {
 
 @media screen and (max-width:960px) {
   .hero header h1 {
-    font: 800 3em 'Druk text wide', sans-serif;
+    font: 900 3em 'DrukTextWide-Heavy';
   }
   nav ul li {
     padding: .25em 0em .25em 1.5em;
@@ -319,17 +332,26 @@ footer p {
   .overons header h1 {
     font-size: 2.5em;
   }
+  .member header h1{
+    font-size: 2.5em;
+  }
+  .over-member header h1{
+    font-size: 2em;
+  }
 }
 
 
 @media screen and (max-width:660px) {
   .hero header h1 {
-    font: 800 2.5em 'Druk text wide', sans-serif;
+    font: 900 2.5em 'DrukTextWide-Heavy';
   }
   nav ul li {
     font-size: 12px;
   }
   .hero header a {
+    font-size: .8em;
+  }
+  .member header a {
     font-size: .8em;
   }
   .overons header h1 {
@@ -339,6 +361,10 @@ footer p {
     margin-top: 3em;
   }
   .overons header p {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .over-member header p {
     font-size: 13px;
     line-height: 25px;
   }
@@ -352,7 +378,7 @@ footer p {
 
 @media screen and (max-width:560px) {
   .hero header h1 {
-    font: 800 2em 'Druk text wide', sans-serif;
+    font: 900 2em 'DrukTextWide-Heavy';
   }
   .overons header h1 {
     font-size: 1.5em;
