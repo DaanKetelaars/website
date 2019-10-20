@@ -23,6 +23,7 @@ body {
   font-family: 'Source Code Pro', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #4C27FF;
   margin: 0 auto;
   height: 100%;
   width: 100%;
@@ -46,12 +47,29 @@ a {
   flex-direction: column;
   height: 100vh;
   width: 100%;
+  background-color: #4C27FF;
+  background-image:url(../assets/djvt-foto3.jpg);
+  background-attachment: fixed;
+  /* BRON FOTO: https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwik1qL13KrlAhUOaFAKHeQ4D5gQjRx6BAgBEAQ&url=https%3A%2F%2Fesns.nl%2Fartist%2Fde-jeugd-van-tegenwoordig%2F&psig=AOvVaw0zx4JTJu_p1UanxsqymxGY&ust=1571656769572129 */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  -webkit-animation: fadein 2s ease-in-out;
+  animation: fadein 2s ease-in-out;
 }
 
-#container {
+#wrapper-detail {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  -webkit-animation: fadein 2s ease-in-out;
+  animation: fadein 2s ease-in-out;
+}
+
+.container {
   margin: 0 auto;
   max-width: 90%;
-  overflow: hidden;
   height: 100%;
 }
 
@@ -64,7 +82,6 @@ a {
 /*** NAV ***/
 nav {
   height: 100px;
-  background-color: #4C27FF;
   padding-top: 1em;
 }
 
@@ -110,6 +127,11 @@ a.logo {
   font-size: 1.5em;
   display: flex;
   align-items: center;
+  transition: color .3s ease-out;
+}
+
+a.logo:hover {
+  color: #fff;
 }
 
 /*** NAV END ***/
@@ -117,7 +139,6 @@ a.logo {
 
 /*** SECTION HERO ***/
 section.hero {
-  background-color: #4C27FF;
   flex-grow: 1;
   padding-top: 2em;
   padding-bottom: 5em;
@@ -133,28 +154,37 @@ section.hero {
 }
 
 .hero header h1 {
-  background-image: url('../assets/djvt-foto2.jpeg');
-  /* BRON FOTO:https://www.tivolivredenburg.nl/wp-content/uploads/2017/11/DEZE-GEBRUIKEN-liggend.jpeg */
+  background-image: url('../assets/djvt-video.gif');
+  /* BRON GIF:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiKqY2i2qrlAhWKblAKHQxjCi0QjRx6BAgBEAQ&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D2ahUKEwjLn6yh2qrlAhWJPFAKHZAwBTkQjRx6BAgBEAQ%26url%3Dhttps%253A%252F%252Ftnfeeds.wordpress.com%252F2013%252F08%252F29%252Fde-jeugd-van-tegenwoordig-een-barkie-in-gifs%252F%26psig%3DAOvVaw0ErBTb0MO_yQj3K7T7KFkA%26ust%3D1571656337868956&psig=AOvVaw0ErBTb0MO_yQj3K7T7KFkA&ust=1571656337868956 */
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: 100% 25%;
   text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font: 900 4.25em 'DrukTextWide-Heavy';
   width: 100%;
   line-height: 1em;
+  transition: background-image .2s ease-out;
+  color: #fff;
+}
+
+.hero header h1:hover {
+  background-image: url('../assets/djvt-video2.gif');
+  /* BRON GIF:https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjm1pPl2qrlAhVQZFAKHYiEAdUQjRx6BAgBEAQ&url=https%3A%2F%2Ftnfeeds.wordpress.com%2F2013%2F08%2F29%2Fde-jeugd-van-tegenwoordig-een-barkie-in-gifs%2F&psig=AOvVaw33dwXx2arwyXlulPCTUp8k&ust=1571656482109127 */
 }
 
 .hero header a {
   text-align: center;
   color: #0EFFB8;
-  border-bottom: 1px solid #0EFFB8;
+  border-bottom: 2px solid #0EFFB8;
   display: block;
   font-size: 1em;
   margin-top: 5em;
   font-weight: 500;
 }
+
+
 
 /*** SECTION HERO END ***/
 
@@ -182,7 +212,7 @@ section.overons {
 
 .overons header p {
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 500;
   color: #000000;
   line-height: 35px;
   word-spacing: -0.1em;
@@ -191,6 +221,12 @@ section.overons {
 .overons header img {
   width: 100%;
   margin-top: 5em;
+  margin-bottom: 3em;
+  transition: transform .5s ease-in-out;
+}
+
+.overons header img:hover {
+  transform:translateY(-30px);
 }
 
 .overons header a.foto-link {
@@ -236,7 +272,7 @@ section.member {
 .member header a {
   text-align: center;
   color: #0EFFB8;
-  border-bottom: 1px solid #0EFFB8;
+  border-bottom: 2px solid #0EFFB8;
   display: block;
   font-size: 1em;
   margin-top: 5em;
@@ -271,7 +307,7 @@ section.over-member {
 
 .over-member header p {
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 500;
   color: #000000;
   line-height: 35px;
   word-spacing: -0.1em;
@@ -280,6 +316,12 @@ section.over-member {
 .over-member header img {
   width: 100%;
   margin-top: 5em;
+  margin-bottom: 3em;
+  transition: transform .5s ease-in-out;
+}
+
+.over-member header img:hover {
+transform:translateY(-30px);
 }
 
 .over-member header a.foto-link {
@@ -316,6 +358,20 @@ footer p {
 
 
 
+/* FADEIN */
+
+  @-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+
 
 /* MEDIA QUERIES */
 
@@ -326,7 +382,7 @@ footer p {
   nav ul li {
     padding: .25em 0em .25em 1.5em;
   }
-  #container {
+  .container {
     max-width:90%;
   }
   .overons header h1 {
@@ -337,6 +393,9 @@ footer p {
   }
   .over-member header h1{
     font-size: 2em;
+  }
+  #wrapper {
+    background-image: none;
   }
 }
 
