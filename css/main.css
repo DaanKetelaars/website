@@ -413,3 +413,64 @@ footer p {
     font-size: 12px;
   }
 }
+
+@media screen and (max-width:500px) {
+  .container {
+    max-width: 90%;
+  }
+
+  nav ul li a {
+    font-size: .5em;
+  }
+
+  a.logo {
+    font-size: .7em;
+  }
+
+  .hero header h1 {
+    font-size: 20px;
+  }
+
+  .hero header a {
+    margin-top: 30%;
+    font-size: 14px;
+  }
+
+  .hero header p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .card-container {
+    margin-top: 50%;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .card-img {
+    height: 200px;
+  }
+
+  .card-img h2 {
+    font-size: 14px;
+  }
+
+  .over-member header h2 {
+    font-size: 20px;
+  }
+
+  .overons {
+    padding-bottom: 5em;
+  }
+
+  footer {
+    padding: 2em;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
