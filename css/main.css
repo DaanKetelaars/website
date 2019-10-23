@@ -335,7 +335,7 @@ footer p {
 }
 
 /* SCROLLDOWN */
-@-webkit-keyframes scrolldown {
+/* @-webkit-keyframes scrolldown {
   0% {
     height: 100px;
   }
@@ -343,7 +343,7 @@ footer p {
   100% {
     height: 0px;
   }
-}
+} */
 
 /* FADEINUP */
 @-webkit-keyframes fadeinUp {
