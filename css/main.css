@@ -7,7 +7,6 @@
     url('../assets/fonts/DrukTextWide-Heavy.ttf') format('truetype');
 }
 
-
 /* BASICS/RESET */
 html {
   scroll-behavior: smooth;
@@ -20,10 +19,9 @@ html {
 }
 
 body {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'DrukTextWide-Heavy';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4C27FF;
   margin: 0 auto;
   height: 100%;
   width: 100%;
@@ -42,44 +40,19 @@ a {
   text-decoration: none;
 }
 
-#wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-  background-color: #4C27FF;
-  background-image:url(../assets/djvt-foto3.jpg);
-  background-attachment: fixed;
-  /* BRON FOTO: https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwik1qL13KrlAhUOaFAKHeQ4D5gQjRx6BAgBEAQ&url=https%3A%2F%2Fesns.nl%2Fartist%2Fde-jeugd-van-tegenwoordig%2F&psig=AOvVaw0zx4JTJu_p1UanxsqymxGY&ust=1571656769572129 */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
-  -webkit-animation: fadein 2s ease-in-out;
-  animation: fadein 2s ease-in-out;
-}
-
-#wrapper-detail {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-  -webkit-animation: fadein 2s ease-in-out;
-  animation: fadein 2s ease-in-out;
+p {
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 80%;
   height: 100%;
 }
 
 /* BASICS/RESET END */
-
-
 /* MAIN CONTENT */
-
-
-/*** NAV ***/
+/**** NAV ****/
 nav {
   height: 100px;
   padding-top: 1em;
@@ -102,7 +75,8 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: .7em;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'DrukTextWide-Heavy';
+  text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -123,25 +97,27 @@ a.logo {
   border-bottom: none;
   color: #0EFFB8;
   font-family: 'DrukTextWide-Heavy';
-  letter-spacing: 3px;
-  font-size: 1.5em;
+  font-size: 1em;
   display: flex;
   align-items: center;
-  transition: color .3s ease-out;
 }
 
-a.logo:hover {
-  color: #fff;
+/**** HERO ****/
+#wrapper-hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/djvt-foto3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/*** NAV END ***/
-
-
-/*** SECTION HERO ***/
-section.hero {
-  flex-grow: 1;
-  padding-top: 2em;
-  padding-bottom: 5em;
+.hero {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .hero header {
@@ -149,297 +125,356 @@ section.hero {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  padding: 5em;
 }
 
 .hero header h1 {
-  background-image: url('../assets/djvt-video.gif');
-  /* BRON GIF:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiKqY2i2qrlAhWKblAKHQxjCi0QjRx6BAgBEAQ&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D2ahUKEwjLn6yh2qrlAhWJPFAKHZAwBTkQjRx6BAgBEAQ%26url%3Dhttps%253A%252F%252Ftnfeeds.wordpress.com%252F2013%252F08%252F29%252Fde-jeugd-van-tegenwoordig-een-barkie-in-gifs%252F%26psig%3DAOvVaw0ErBTb0MO_yQj3K7T7KFkA%26ust%3D1571656337868956&psig=AOvVaw0ErBTb0MO_yQj3K7T7KFkA&ust=1571656337868956 */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 100% 25%;
+  color: #FFFFFF;
+  font-size: 70px;
+  margin-top: 10%;
+  text-transform: uppercase;
   text-align: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font: 900 4.25em 'DrukTextWide-Heavy';
-  width: 100%;
-  line-height: 1em;
-  transition: background-image .2s ease-out;
-  color: #fff;
+  position: relative;
+  -webkit-animation: fadeinUp 1.2s cubic-bezier(0.71, 0.01, 0.11, 1), fadein 2s cubic-bezier(0.71, 0.01, 0.11, 1);
+  animation: fadeinUp 1.2s cubic-bezier(0.71, 0.01, 0.11, 1), fadein 2s cubic-bezier(0.71, 0.01, 0.11, 1);
 }
 
-.hero header h1:hover {
-  background-image: url('../assets/djvt-video2.gif');
-  /* BRON GIF:https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjm1pPl2qrlAhVQZFAKHYiEAdUQjRx6BAgBEAQ&url=https%3A%2F%2Ftnfeeds.wordpress.com%2F2013%2F08%2F29%2Fde-jeugd-van-tegenwoordig-een-barkie-in-gifs%2F&psig=AOvVaw33dwXx2arwyXlulPCTUp8k&ust=1571656482109127 */
+.hero header p {
+  font-size: 18px;
+  color: #fff;
+  width: 30em;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 2em;
+  position: relative;
+  -webkit-animation: fadeinUp 1.8s cubic-bezier(1, 0.01, 0, 1), fadein 2s cubic-bezier(1, 0.01, 0, 1);
+  animation: fadeinUp 1.8s cubic-bezier(1, 0.01, 0, 1), fadein 2s cubic-bezier(1, 0.01, 0, 1);
 }
 
 .hero header a {
-  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 10%;
   color: #0EFFB8;
-  border-bottom: 2px solid #0EFFB8;
-  display: block;
-  font-size: 1em;
-  margin-top: 5em;
-  font-weight: 500;
-}
-
-
-
-/*** SECTION HERO END ***/
-
-
-/*** SECTION OVERONS ***/
-section.overons {
-  background-color: #0EFFB8;
-  height: 100%;
-  width: 100%;
-  padding-top: 5em;
-  padding-bottom: 5em;
-}
-
-.overons header h1 {
   text-align: center;
-  font: 800 3.5em 'DrukTextWide-Heavy';
-  color: #4C27FF;
-  margin-top: 1em;
+  border-bottom: none;
 }
 
-.overons header {
+.hero header a:hover {
+  border-bottom: 2px solid #0EFFB8;
+}
+
+.hero header .line {
+  width: 2px;
+  height: 0px;
+  background: #0EFFB8;
+  position: absolute;
+  bottom: 0;
+  -webkit-animation: scrolldown 1.8s ease-in-out infinite;
+  animation: scrolldown 1.8s ease-in-out infinite;
+}
+
+/**** OVERONS ****/
+.overons {
   width: 100%;
   height: 100%;
+  padding-bottom: 10em;
+  background: #0EFFB8;
+  background-image: linear-gradient(to left, #8BFFDD, #0EFFB8);
 }
 
-.overons header p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #000000;
-  line-height: 35px;
-  word-spacing: -0.1em;
-}
-
-.overons header img {
+.card-container {
   width: 100%;
-  margin-top: 5em;
-  margin-bottom: 3em;
-  transition: transform .5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25%;
 }
 
-.overons header img:hover {
-  transform:translateY(-30px);
+.card {
+  width: 45%;
+  margin: 5px;
+  height: 300px;
+  overflow: hidden;
 }
 
-.overons header a.foto-link {
-  margin-bottom: 3em;
-  display: block;
-  color: #4C27FF;
-  font-weight: 500;
-}
-
-.overons header a.text-link {
-  color: #4C27FF;
-  font-weight: 500;
-}
-
-/*** SECTION OVERONS END ***/
-
-
-
-/*** SECTION MEMBER ***/
-section.member {
-  background-color: #4C27FF;
-  flex-grow: 1;
-  padding-top: 2em;
-  padding-bottom: 5em;
-}
-
-.member header {
+.card-img {
+  height: 300px;
+  width: 100%;
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.card-img h2 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.card-img.willie {
+  background-image: url(../assets/willie.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img.viezefur {
+  background-image: url(../assets/viezefur.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img.faberyayo {
+  background-image: url(../assets/faberyayo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img.basbron {
+  background-image: url(../assets/basbron.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img:hover {
+  transform: scale(1.2);
+  box-shadow: inset 0px 0px 50px 1000px rgba(44, 0, 255, 0.75);
+  cursor: pointer;
+  border: 1px solid dotted #000;
+}
+
+/**** DETAIL ****/
+#wrapper-detail {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   width: 100%;
-  height: 100%;
+  background-image: linear-gradient(to left, #1A096D, #4923FF);
 }
 
-.member header h1 {
-  text-align: center;
-  font: 800 4.25em 'DrukTextWide-Heavy';
-  width: 100%;
-  color:#fff;
-}
-
-.member header a {
-  text-align: center;
-  color: #0EFFB8;
-  border-bottom: 2px solid #0EFFB8;
-  display: block;
-  font-size: 1em;
-  margin-top: 5em;
-  font-weight: 500;
-}
-
-/*** SECTION HERO END ***/
-
-
-
-
-/*** SECTION OVER-MEMBER ***/
-section.over-member {
-  background-color: #0EFFB8;
-  height: 100%;
+.over-member {
   width: 100%;
   padding-top: 5em;
-  padding-bottom: 5em;
-}
-
-.over-member header h1 {
-  text-align: center;
-  font: 800 3.5em 'DrukTextWide-Heavy';
-  color: #4C27FF;
-  margin-top: 1em;
-}
-
-.over-member header {
-  width: 100%;
+  padding-bottom: 10em;
   height: 100%;
+  background: #0EFFB8;
+  background-image: linear-gradient(to left, #8BFFDD, #0EFFB8);
 }
 
-.over-member header p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #000000;
-  line-height: 35px;
-  word-spacing: -0.1em;
+.over-member header h2 {
+  color: #2C00FF;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
 .over-member header img {
   width: 100%;
-  margin-top: 5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.over-member header .foto-link {
+  text-transform: uppercase;
+  font-size: 14px;
+  border-bottom: 2px solid #2C00FF;
   margin-bottom: 3em;
-  transition: transform .5s ease-in-out;
+  display: inline-block;
 }
 
-.over-member header img:hover {
-transform:translateY(-30px);
+.over-member header p {
+  font-size: 18px;
+  color: #000;
+  text-align: left;
+  line-height: 35px;
 }
 
-.over-member header a.foto-link {
-  margin-bottom: 3em;
-  display: block;
-  color: #4C27FF;
-  font-weight: 500;
-}
-
-.over-member header a.text-link {
-  color: #4C27FF;
-  font-weight: 500;
-}
-
-/*** SECTION OVER-MEMBER END ***/
-
-
-
-
-/*** FOOTER ***/
+/**** FOOTER ****/
 footer {
-  background-color: #0EFFB8;
+  background-image: linear-gradient(to left, #8BFFDD, #0EFFB8);
   width: 100%;
   text-align: center;
   padding: 5em;
 }
 
 footer p {
-  font-weight: 900;
-  color: #4C27FF;
+  color: #2C00FF;
+  font-family: 'DrukTextWide-Heavy';
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 /* MAIN CONTENT END */
-
-
-
 /* FADEIN */
-
-  @-webkit-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
   }
 
-  @keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
   }
 
+  to {
+    opacity: 1;
+  }
+}
 
+/* SCROLLDOWN */
+@-webkit-keyframes scrolldown {
+  0% {
+    height: 100px;
+  }
 
+  100% {
+    height: 0px;
+  }
+}
+
+/* FADEINUP */
+@-webkit-keyframes fadeinUp {
+  0% {
+    top: 4em;
+  }
+
+  100% {
+    top: 0;
+  }
+}
 
 /* MEDIA QUERIES */
-
 @media screen and (max-width:960px) {
   .hero header h1 {
-    font: 900 3em 'DrukTextWide-Heavy';
+    font-size: 50px;
   }
-  nav ul li {
-    padding: .25em 0em .25em 1.5em;
-  }
-  .container {
-    max-width:90%;
-  }
-  .overons header h1 {
-    font-size: 2.5em;
-  }
-  .member header h1{
-    font-size: 2.5em;
-  }
-  .over-member header h1{
-    font-size: 2em;
-  }
-  #wrapper {
-    background-image: none;
+
+  .hero header a {
+    margin-top: 20%;
   }
 }
 
-
-@media screen and (max-width:660px) {
-  .hero header h1 {
-    font: 900 2.5em 'DrukTextWide-Heavy';
+@media screen and (max-width:760px) {
+  .container {
+    max-width: 90%;
   }
-  nav ul li {
+
+  .hero header {
+    padding: 2em;
+  }
+
+  .hero header h1 {
+    font-size: 30px;
+  }
+
+  .hero header a {
+    margin-top: 50%;
+  }
+
+  .hero header p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .card-container {
+    margin-top: 50%;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .card-img {
+    height: 200px;
+  }
+
+  .card-img h2 {
+    font-size: 18px;
+  }
+
+  .over-member header h2 {
+    font-size: 40px;
+  }
+
+  footer p {
     font-size: 12px;
   }
-  .hero header a {
-    font-size: .8em;
-  }
-  .member header a {
-    font-size: .8em;
-  }
-  .overons header h1 {
-    font-size: 2em;
-  }
-  .overons header img {
-    margin-top: 3em;
-  }
-  .overons header p {
-    font-size: 13px;
-    line-height: 25px;
-  }
-  .over-member header p {
-    font-size: 13px;
-    line-height: 25px;
-  }
-  footer p {
-    font-size: 14px;
-  }
-  footer {
-    padding: 3em;
-  }
 }
 
-@media screen and (max-width:560px) {
-  .hero header h1 {
-    font: 900 2em 'DrukTextWide-Heavy';
+@media screen and (max-width:500px) {
+  .container {
+    max-width: 90%;
   }
-  .overons header h1 {
-    font-size: 1.5em;
+
+  nav ul li a {
+    font-size: .5em;
+  }
+
+  a.logo {
+    font-size: .7em;
+  }
+
+  .hero header h1 {
+    font-size: 20px;
+    margin-top: 20%;
+  }
+
+  .hero header a {
+    margin-top: 50%;
+    font-size: 14px;
+  }
+
+  .hero header p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .card-container {
+    margin-top: 50%;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .card-img {
+    height: 200px;
+  }
+
+  .card-img h2 {
+    font-size: 14px;
+  }
+
+  .over-member header h2 {
+    font-size: 20px;
+  }
+
+  .overons {
+    padding-bottom: 5em;
+  }
+
+  footer {
+    padding: 2em;
+  }
+
+  footer p {
+    font-size: 10px;
   }
 }
