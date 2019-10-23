@@ -165,7 +165,7 @@ a.logo {
 
 .hero header .line {
   width: 2px;
-  height: 0px;
+  height:120px;
   background: #0EFFB8;
   position: absolute;
   bottom: 0;
