@@ -133,7 +133,6 @@ a.logo {
   font-size: 70px;
   text-transform: uppercase;
   text-align: center;
-  position: relative;
   -webkit-animation: fadeinUp 1.2s cubic-bezier(0.71, 0.01, 0.11, 1), fadein 2s cubic-bezier(0.71, 0.01, 0.11, 1);
   animation: fadeinUp 1.2s cubic-bezier(0.71, 0.01, 0.11, 1), fadein 2s cubic-bezier(0.71, 0.01, 0.11, 1);
 }
@@ -147,7 +146,6 @@ a.logo {
   text-align: center;
   line-height: 35px;
   margin-top: 2em;
-  position: relative;
   -webkit-animation: fadeinUp 1.8s cubic-bezier(1, 0.01, 0, 1), fadein 2s cubic-bezier(1, 0.01, 0, 1);
   animation: fadeinUp 1.8s cubic-bezier(1, 0.01, 0, 1), fadein 2s cubic-bezier(1, 0.01, 0, 1);
 }
