@@ -115,12 +115,6 @@ a.logo {
   position: relative;
 }
 
-.hero-detail {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
 .hero {
   height: 100%;
   width: 100%;
@@ -261,6 +255,7 @@ a.logo {
   height: 100vh;
   width: 100%;
   background-image: linear-gradient(to left, #1A096D, #4923FF);
+  position: relative;
 }
 
 .over-member {
