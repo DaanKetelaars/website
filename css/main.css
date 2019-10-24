@@ -456,6 +456,7 @@ footer p {
 
   .card {
     height: 200px;
+    width: 100%;
   }
 
   .card-img {
