@@ -51,7 +51,9 @@ p {
 }
 
 /* BASICS/RESET END */
+
 /* MAIN CONTENT */
+
 /**** NAV ****/
 nav {
   height: 100px;
@@ -315,6 +317,8 @@ footer p {
 }
 
 /* MAIN CONTENT END */
+
+
 /* FADEIN */
 @-webkit-keyframes fadein {
   from {
@@ -350,11 +354,11 @@ footer p {
 /* FADEINUP */
 @-webkit-keyframes fadeinUp {
   0% {
-    top:4em;
+    top: 4em;
   }
 
   100% {
-    top:0;
+    top: 0;
   }
 }
 
@@ -428,6 +432,7 @@ footer p {
   a.logo {
     font-size: .7em;
   }
+
   .hero header {
     margin-top: 30%;
   }
