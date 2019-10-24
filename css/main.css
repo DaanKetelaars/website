@@ -336,7 +336,7 @@ footer p {
 /* SCROLLDOWN */
 @-webkit-keyframes scrolldown {
   0% {
-    height: 100px;
+    height: 120px;
   }
 
   100% {
@@ -424,6 +424,9 @@ footer p {
 
   a.logo {
     font-size: .7em;
+  }
+  .hero header {
+    margin-top: 20%;
   }
 
   .hero header h1 {
