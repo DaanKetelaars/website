@@ -133,6 +133,7 @@ a.logo {
   font-size: 70px;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
   -webkit-animation: fadeinUp 1.2s cubic-bezier(0.71, 0.01, 0.11, 1), fadein 2s cubic-bezier(0.71, 0.01, 0.11, 1);
   animation: fadeinUp 1.2s cubic-bezier(0.71, 0.01, 0.11, 1), fadein 2s cubic-bezier(0.71, 0.01, 0.11, 1);
 }
@@ -143,6 +144,7 @@ a.logo {
   width: 30em;
   display: block;
   margin: 0 auto;
+  position: relative;
   text-align: center;
   line-height: 35px;
   margin-top: 2em;
@@ -348,11 +350,11 @@ footer p {
 /* FADEINUP */
 @-webkit-keyframes fadeinUp {
   0% {
-    top: 4em;
+    top:100px;
   }
 
   100% {
-    top: 0;
+    top:0px;
   }
 }
 
