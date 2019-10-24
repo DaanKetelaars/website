@@ -350,11 +350,11 @@ footer p {
 /* FADEINUP */
 @-webkit-keyframes fadeinUp {
   0% {
-    top:100px;
+    top:4em;
   }
 
   100% {
-    top:0px;
+    top:0;
   }
 }
 
